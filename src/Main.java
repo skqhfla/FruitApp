@@ -28,7 +28,7 @@ public class Main {
 		}
 		System.out.println("Fruit List (reverse ordered by name)");
 		
-		Collections.sort(fl, Collections.reverseOrder());
+		Collections.sort(fl, new FruitComparatorDesc());
 		
 		for(int i = 0; i<fl.size(); i++) {
 			System.out.println(fl.get(i).toString());
